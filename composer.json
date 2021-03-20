@@ -1,0 +1,29 @@
+{
+    "name": "jmbtj/gerenciadodeprojeto",
+    "authors": [
+        {
+            "name": "LaryssaGomes",
+            "email": "laryssag533@gmail.com"
+        }
+    ],
+    "require": {
+        "pimple/pimple": "^3.3",
+        "symfony/http-foundation": "^5.2",
+        "mpdf/mpdf": "^8.0",
+        "zendframework/zend-eventmanager": "^3.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "SON\\Framework\\": "src"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "scripts": {
+        "server": "php -S localhost:8000 -t public"
+    },
+    "config": {
+        "process-timeout": 0
+    }
+}
